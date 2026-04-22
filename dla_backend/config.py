@@ -26,8 +26,6 @@ class Settings(BaseSettings):
     # Anthropic
     ANTHROPIC_API_KEY: str
 
-    # Redis
-    REDIS_URL: str = "redis://localhost:6379/0"
 
     # Cloud pricing
     AWS_ACCESS_KEY_ID:     str = ""
