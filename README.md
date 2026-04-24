@@ -52,7 +52,7 @@ Each decision the agent makes is transparent: it shows the storage saving, its o
 
 The agent runs as a scheduled job that moves conversations through a five-stage pipeline. Each stage filters aggressively so the expensive steps (API calls) only run on a small, carefully selected subset.
 
-
+```
 ┌───────────────────────────────────────────────────────────────────────┐
 │  Scheduler run triggered (manual or cron)                             │
 └────────────────────────────────────┬──────────────────────────────────┘
@@ -100,6 +100,7 @@ The agent runs as a scheduled job that moves conversations through a five-stage 
 │  Verdict + confidence + reasoning written to DB.                      │
 │  Destructive actions require human confirmation.                      │
 └───────────────────────────────────────────────────────────────────────┘
+```
 
 The point of this shape is that most conversations never reach Stage 5. Stage 2 filters out things that are obviously worth keeping. Stage 4 protects against running Stage 5 when the economics don't justify it. By the time Claude actually gets called, the candidates have been narrowed from "every conversation in the database" to "a handful of representatives from clusters that might actually yield savings."
 
@@ -366,6 +367,8 @@ npm run dev
 ---
 
 ## Project structure
+
+```
 data-lifecycle-agent/
 ├── db/
 │   ├── dla_schema.sql
@@ -425,6 +428,7 @@ data-lifecycle-agent/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
 
 ---
 
