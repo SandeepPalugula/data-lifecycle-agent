@@ -2,6 +2,8 @@
 
 > An AI agent that cuts LLM conversation storage costs — and knows when it shouldn't run at all.
 
+**Read the blog post:** [The Conversation Storage Problem Nobody Is Solving Yet](https://medium.com/@sandeepjawaharp/the-conversation-storage-problem-nobody-is-solving-yet-6799d227c629)
+
 **Jump to:** [Why this exists](#why-this-exists) · [The core insight](#the-core-insight) · [Architecture](#architecture) · [Tech stack](#tech-stack) · [Key design decisions](#key-design-decisions) · [A few bugs worth telling you about](#a-few-bugs-worth-telling-you-about) · [What this project demonstrates](#what-this-project-demonstrates) · [Running locally](#running-locally) · [Project structure](#project-structure) · [Roadmap and known limitations](#roadmap-and-known-limitations)
 
 ---
